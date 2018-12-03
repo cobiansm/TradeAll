@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Log in
+      Iniciar Sesión
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,24 +10,29 @@
   <ion-list>
 
     <ion-item>
-      <ion-label floating>Usuario</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label floating>Correo</ion-label>
+      <ion-input type="text" [(ngModel)]="correo"></ion-input>
     </ion-item>
   
     <ion-item>
       <ion-label floating>Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password" [(ngModel)]="contra"></ion-input>
     </ion-item>
   
   </ion-list>
 
-  <ion-row>
-    <ion-col>
-      <button ion-button block (click)="sesion()">Iniciar Sesión</button>
-    </ion-col>  
-    <ion-col>
-      <button ion-button block (click)="registro()" color="light" >Registrarse</button>
-    </ion-col>
-  </ion-row>
+    <button ion-button block (click)="sesion()">Iniciar Sesión</button>
+    <ion-label style='text-align: center'>¿No tienes una cuenta?</ion-label>
+    <button ion-button block (click)="registro()" color="light" >Registrarse</button>
+   
     
+  <ion-list>
+    <ion-item *ngFor="let u of usuarios">
+      <ion-card>
+        {{u.correo}}
+        {{u.contra}}
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
