@@ -30,6 +30,7 @@ usuarios = [];
   }
 
   sesion() {
+    if (this.correo.length > 0 && this.contra.length > 0) {
     let index = this.usuarios.findIndex(u => u.correo == this.correo && u.contra == this.contra);
 
     if (index >= 0) {
@@ -43,15 +44,24 @@ usuarios = [];
     }
     else {
       const alerta = this.alert.create({
-        title: "Error 404",
-        subTitle: "Cuenta no encontrada",
+        title: "Error 101",
+        subTitle: "User not found",
         buttons: ['Ok']
       });
       alerta.present();
     }
+  } else {
+    const aler = this.alert.create({
+    title: "Error 13",
+    subTitle: 'No coinciden los datos',
+    buttons: ['Ok']
+  });
+  aler.present();
+  }
   }
 
   registro() {
     this.navCtrl.push(this.registrarse, {usuarios: this.usuarios});
   }
+
 }

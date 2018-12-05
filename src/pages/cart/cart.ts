@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the BienvenidoPage page.
+ * Generated class for the CartPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,22 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-bienvenido',
-  templateUrl: 'bienvenido.html',
+  selector: 'page-cart',
+  templateUrl: 'cart.html',
 })
-export class BienvenidoPage {
-  usuarios = [];
+export class CartPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.usuarios = this.navParams.get('usuarios');
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BienvenidoPage');
-  }
-
-  user() {
-    this.navCtrl.push('perfil');
+    console.log('ionViewDidLoad CartPage');
   }
 
 }

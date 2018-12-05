@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {Storage} from "@ionic/storage";
+import { BienvenidoPage } from '../bienvenido/bienvenido';
 
 /**
  * Generated class for the RegistroPage page.
@@ -18,6 +19,7 @@ export class RegistroPage {
 correo = '';
 contra = '';
 nombre = '';
+tel = '';
 usuarios = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage) {
@@ -34,11 +36,15 @@ usuarios = [];
     this.usuarios.push({
       correo: this.correo,
       contra: this.contra,
-      nombre: this.nombre
+      nombre: this.nombre,
+      tel: this.tel
     });
-    // modicar la llave para tener diferentes usuarios
     this.storage.set('usuarios', JSON.stringify(this.usuarios));
     this.navCtrl.pop();
   }
+
+  home() {
+    this.navCtrl.push(BienvenidoPage)
+;  }
 
 }
