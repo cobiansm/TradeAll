@@ -22,7 +22,7 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor = 'let p of productos'>
+  <ion-card *ngFor = 'let p of productos' (click)='verProducto()'>
       <img [src] = p.imagen item-start>
     <ion-list>
       <ion-item>
@@ -34,7 +34,7 @@
         {{p.date.fecha}}
       </ion-note>
       <ion-note item-end>
-        {{p.date.disponibles}}
+       {{p.date.disponibles}}
       </ion-note>
     </ion-item>
   </ion-list>

@@ -34,10 +34,10 @@ export class BienvenidoPage {
             date:'11/09/2051'
           }],
 
-          date: [{
+          date: {
               fecha:'09/01/2050',
-              disponibles:'0'
-          }]
+              disponibles:'Disponible: 0'
+          }
     },
 
     {
@@ -59,10 +59,10 @@ export class BienvenidoPage {
             date:'05/12/2056'
           }],
 
-          date: [{
+          date: {
               fecha:'11/10/2050',
-              disponibles:'3'
-          }]
+              disponibles:'Disponible: 3'
+          }
     },
 
     {
@@ -84,10 +84,10 @@ export class BienvenidoPage {
             date:'27/12/2050'
           }],
 
-          date: [{
+          date: {
               fecha:'11/10/2050',
-              disponibles:'1'
-          }]
+              disponibles:'Disponible: 1'
+          }
     },
 
     {
@@ -109,10 +109,10 @@ export class BienvenidoPage {
             date:'02/03/2050'
           }],
 
-          date: [{
+          date: {
               fecha:'01/02/2050',
-              disponibles:'15'
-          }]
+              disponibles:'Disponible: 15'
+          }
     },
 
     {
@@ -134,10 +134,10 @@ export class BienvenidoPage {
             date:'02/03/2050'
           }],
 
-          date: [{
+          date: {
               fecha:'01/02/2050',
-              disponibles:'15'
-          }]
+              disponibles:'Disponible: 15'
+          }
     },
 
     {
@@ -159,10 +159,10 @@ export class BienvenidoPage {
               date:'17/12/2052'
             }],
   
-            date: [{
+            date:{
                 fecha:'13/05/2050',
-                disponibles:'1'
-            }]
+                disponibles:'Disponible: 1'
+            }
       },
 
       {
@@ -184,10 +184,10 @@ export class BienvenidoPage {
               date:'02/03/2053'
             }],
   
-            date: [{
+            date: {
                 fecha:'02/05/2051',
-                disponibles:'4'
-            }]
+                disponibles:'Disponible: 4'
+            }
       },
 
       {
@@ -209,10 +209,10 @@ export class BienvenidoPage {
               date:'11/11/2056'
             }],
   
-            date: [{
+            date:{
                 fecha:'01/07/2052',
-                disponibles:'2'
-            }]
+                disponibles:'Disponible: 2'
+            }
       },
 
       {
@@ -234,10 +234,10 @@ export class BienvenidoPage {
               date:'30/06/2054'
             }],
   
-            date: [{
+            date: {
                 fecha:'29/06/2056',
-                disponibles:'11'
-            }]
+                disponibles:'Disponible: 11'
+            }
       },
 
       {
@@ -259,10 +259,10 @@ export class BienvenidoPage {
               date:'30/10/2054'
             }],
   
-            date: [{
+            date: {
                 fecha:'10/09/2056',
-                disponibles:'5'
-            }]
+                disponibles:'Disponible: 5'
+            }
       },
       
       {
@@ -284,10 +284,10 @@ export class BienvenidoPage {
               date:'25/11/2052'
             }],
   
-            date: [{
+            date: {
                 fecha:'07/02/2051',
-                disponibles:'7'
-            }]
+                disponibles:'Disponible: 7'
+            }
       },
 
       {
@@ -309,10 +309,10 @@ export class BienvenidoPage {
               date:'26/11/2052'
             }],
   
-            date: [{
+            date: {
                 fecha:'17/02/2051',
-                disponibles:'6'
-            }]
+                disponibles:'Disponible: 6'
+            }
       },
 
       {
@@ -334,10 +334,10 @@ export class BienvenidoPage {
               date:'15/11/2051'
             }],
   
-            date: [{
+            date: {
                 fecha:'17/01/2051',
-                disponibles:'2'
-            }]
+                disponibles:'Disponible: 2'
+            }
       },
 
       {
@@ -359,10 +359,10 @@ export class BienvenidoPage {
               date:'15/11/2051'
             }],
   
-            date: [{
+            date: {
                 fecha:'17/01/2051',
-                disponibles:'2'
-            }]
+                disponibles:'Disponible: 2'
+            }
       },
 
       {
@@ -384,10 +384,10 @@ export class BienvenidoPage {
               date:'17/05/2050'
             }],
   
-            date: [{
+            date: {
                 fecha:'30/02/2050',
-                disponibles:'3'
-            }]
+                disponibles:'Disponible: 3'
+            }
       },
 
       {
@@ -411,7 +411,7 @@ export class BienvenidoPage {
   
             date: [{
                 fecha:'30/02/2050',
-                disponibles:'5'
+                disponibles:'Disponible: 5'
             }]
       },
 
@@ -434,10 +434,10 @@ export class BienvenidoPage {
               date:'10/11/2053'
             }],
   
-            date: [{
+            date:{
                 fecha:'31/01/2050',
-                disponibles:'10'
-            }]
+                disponibles:'Disponible: 10'
+            }
       },
 
       {
@@ -459,10 +459,10 @@ export class BienvenidoPage {
               date:'10/11/2052'
             }],
   
-            date: [{
+            date: {
                 fecha:'31/01/2051',
-                disponibles:'20'
-            }]
+                disponibles:'Disponible: 20'
+            }
       },
 
       {
@@ -484,10 +484,10 @@ export class BienvenidoPage {
               date:'21/04/2054'
             }],
   
-            date: [{
+            date: {
                 fecha:'12/12/2051',
-                disponibles:'13'
-            }]
+                disponibles:'Disponible: 13'
+            }
       },
 
       {
@@ -509,10 +509,10 @@ export class BienvenidoPage {
               date:'22/03/2054'
             }],
   
-            date: [{
+            date: {
                 fecha:'12/11/2050',
-                disponibles:'20'
-            }]
+                disponibles:'Disponible: 20'
+            }
       },
 
       {
@@ -534,10 +534,10 @@ export class BienvenidoPage {
               date:'25/05/2053'
             }],
   
-            date: [{
+            date: {
                 fecha:'12/11/2050',
-                disponibles:'11'
-            }]
+                disponibles:'Disponible: 11'
+            }
       }
       
   ];
@@ -554,6 +554,10 @@ export class BienvenidoPage {
 
   user() {
     this.navCtrl.push('perfil');
+  }
+
+  verProductos() {
+   // this.navCtrl.push{pagina, {producto:p, carrito:this.carrito}}
   }
 
 }
