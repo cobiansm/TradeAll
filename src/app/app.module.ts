@@ -9,13 +9,17 @@ import { HomePage } from '../pages/home/home';
 import { BienvenidoPage } from '../pages/bienvenido/bienvenido';
 import { RegistroPage } from '../pages/registro/registro';
 import { IonicStorageModule } from '@ionic/storage';
+import { CartPage } from '../pages/cart/cart';
+import { ProfilePage } from '../pages/profile/profile';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     BienvenidoPage,
-    RegistroPage
+    RegistroPage,
+    CartPage,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     HomePage,
     BienvenidoPage,
-    RegistroPage
+    RegistroPage,
+    CartPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

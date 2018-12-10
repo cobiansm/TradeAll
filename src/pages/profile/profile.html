@@ -6,13 +6,68 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>profile</ion-title>
+  <ion-navbar color='primary'>
+    <ion-title>Producto</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start><img [src] = producto.vperfil></ion-avatar>
+      <h2>{{producto.vender.vendedor}}</h2>
+    <ion-row>
+      <ion-icon name="star" *ngFor='let s of producto.vender.valoracionv'></ion-icon>
+    </ion-row>>
+    </ion-item>
+    <img [src] = producto.imagen>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="planet" item-start></ion-icon>
+     {{producto.nombre}}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="pricetag" item-start></ion-icon>
+      {{producto.precio}}}
+    </ion-item>
+    <ion-item>
+      <ion-icon name="basket" item-start></ion-icon>
+     {{producto.date.disponible}}
+    </ion-item>
+    <ion-item>
+        <ion-icon name="calendar" item-start></ion-icon>
+       {{producto.date.fecha}}
+      </ion-item>
+  </ion-list>
+  </ion-card>
+<button ion-button block (cick)='agregarCarrito()'>Agregar al carrito</button>
 </ion-content>
+
+<ion-card *ngFor = 'let r of producto.review'>
+  <ion-item>
+      <ion-avatar item-start>
+          <img [src]=r.avatar>
+        </ion-avatar>
+        <h2>{{r.username}}</h2>
+        <p>{{r.date}}</p>
+  </ion-item>
+ <ion-card-header>
+   <ion-row><ion-icon name="star" *ngFor='let s of r.valoracion'></ion-icon></ion-row>
+ </ion-card-header>
+  <ion-card-content>
+    {{r.res}}
+  </ion-card-content>
+
+</ion-card>
+
+<ion-footer no-border>
+  <ion-toolbar color='primary'>
+    <ion-row style='background-color: #476C9B'>
+    <ion-col>
+      <img src = "../assets/spaceship.png" style='height: 40px'/>
+    </ion-col>
+    <ion-col> <p style='text-align: end; font-size: 12px'>2018 ®SpaceTrade</p></ion-col>
+  </ion-row>
+ </ion-toolbar>
+</ion-footer>

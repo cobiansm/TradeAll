@@ -14,8 +14,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'cart.html',
 })
 export class CartPage {
-
+carrito = [];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.carrito = this.navParams.get('carrito');
   }
 
   ionViewDidLoad() {

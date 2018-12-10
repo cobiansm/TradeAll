@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { CartPage } from '../cart/cart';
+import { ProfilePage } from '../profile/profile';
 
 /**
  * Generated class for the BienvenidoPage page.
@@ -14,6 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'bienvenido.html',
 })
 export class BienvenidoPage {
+ carrito = []; 
+ carr = CartPage;
+ art = ProfilePage;
+  
   productos=[
     {
       id: 0,
@@ -30,7 +37,7 @@ export class BienvenidoPage {
             username: 'MarleneShip',
             avatar: '../assets/imgs/Avatar3.png',
             valoracion: [1, 2, 3, 4, 5],
-            reseña:'Spicy jalapeno bacon ipsum dolor amet consequat sed reprehenderit aliquip, ea voluptate pork loin dolore strip steak et',
+            res:'Spicy jalapeno bacon ipsum dolor amet consequat sed reprehenderit aliquip, ea voluptate pork loin dolore strip steak et',
             date:'11/09/2051'
           }],
 
@@ -55,7 +62,7 @@ export class BienvenidoPage {
             username: 'MarPlanet',
             avatar: '../assets/imgs/Marvatar.png',
             valoracion: [1, 2, 3, 4 ],
-            reseña:'Non porchetta commodo bresaola enim labore. Excepteur prosciutto kevin, anim incididunt chicken cupim ut aliqua buffalo.',
+            res:'Non porchetta commodo bresaola enim labore. Excepteur prosciutto kevin, anim incididunt chicken cupim ut aliqua buffalo.',
             date:'05/12/2056'
           }],
 
@@ -80,7 +87,7 @@ export class BienvenidoPage {
             username: 'AtomLene',
             avatar: '../assets/imgs/Cavatar.png',
             valoracion: [1, 2, 3, 4, 5],
-            reseña:'upim fatback dolor ex sausage in. Consequat occaecat salami esse alcatra sirloin rump consectetur leberkas non pork. Anim burgdoggen ribeye in tail in velit',
+            res:'upim fatback dolor ex sausage in. Consequat occaecat salami esse alcatra sirloin rump consectetur leberkas non pork. Anim burgdoggen ribeye in tail in velit',
             date:'27/12/2050'
           }],
 
@@ -105,7 +112,7 @@ export class BienvenidoPage {
             username: 'AtomLene',
             avatar: '../assets/imgs/Cavatar.png',
             valoracion: [1, 2, 3, 4],
-            reseña:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
+            res:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
             date:'02/03/2050'
           }],
 
@@ -130,7 +137,7 @@ export class BienvenidoPage {
             username: 'AtomLene',
             avatar: '../assets/imgs/Cavatar.png',
             valoracion: [1, 2, 3, 4],
-            reseña:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
+            res:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
             date:'02/03/2050'
           }],
 
@@ -155,7 +162,7 @@ export class BienvenidoPage {
               username: 'Space Trooper',
               avatar: '../assets/imgs/Avatar2.png',
               valoracion: [1, 2, 3, 4],
-              reseña:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
+              res:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
               date:'17/12/2052'
             }],
   
@@ -180,7 +187,7 @@ export class BienvenidoPage {
               username: 'Corredor de Pods',
               avatar: '../assets/imgs/Avatar3.png',
               valoracion: [1],
-              reseña:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
+              res:'Elit pancetta swine, est t-bone occaecat brisket non fatback.',
               date:'02/03/2053'
             }],
   
@@ -205,7 +212,7 @@ export class BienvenidoPage {
               username: 'Astronaut',
               avatar: '../assets/imgs/Avatar2.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'Ut in eros ut risus finibus tempor. Phasellus eu dignissim odio. Aliquam porta sodales tortor eget semper. Fusce ac eleifend velit.',
+              res:'Ut in eros ut risus finibus tempor. Phasellus eu dignissim odio. Aliquam porta sodales tortor eget semper. Fusce ac eleifend velit.',
               date:'11/11/2056'
             }],
   
@@ -230,7 +237,7 @@ export class BienvenidoPage {
               username: 'Corredor de Pods',
               avatar: '../assets/imgs/Avatar3.png',
               valoracion: [1, 2, 3, 4],
-              reseña:'Pellentesque venenatis lectus sagittis, iaculis diam quis, rhoncus ipsum.',
+              res:'Pellentesque venenatis lectus sagittis, iaculis diam quis, rhoncus ipsum.',
               date:'30/06/2054'
             }],
   
@@ -255,7 +262,7 @@ export class BienvenidoPage {
               username: 'Corredor de Pods',
               avatar: '../assets/imgs/Avatar3.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'Quisque felis dui, mattis vel elit quis, aliquet lobortis nulla. Aliquam a justo ornare.',
+              res:'Quisque felis dui, mattis vel elit quis, aliquet lobortis nulla. Aliquam a justo ornare.',
               date:'30/10/2054'
             }],
   
@@ -280,7 +287,7 @@ export class BienvenidoPage {
               username: 'Corredor de Pods',
               avatar: '../assets/imgs/Avatar3.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'maximus metus id, accumsan ipsum. Proin commodo, quam vitae volutpat pellentesque.',
+              res:'maximus metus id, accumsan ipsum. Proin commodo, quam vitae volutpat pellentesque.',
               date:'25/11/2052'
             }],
   
@@ -305,7 +312,7 @@ export class BienvenidoPage {
               username: 'Corredor de Pods',
               avatar: '../assets/imgs/Avatar3.png',
               valoracion: [1, 2, 3, 4],
-              reseña:' massa mauris aliquam nunc, ut posuere magna massa quis lacus.',
+              res:' massa mauris aliquam nunc, ut posuere magna massa quis lacus.',
               date:'26/11/2052'
             }],
   
@@ -330,7 +337,7 @@ export class BienvenidoPage {
               username: 'Atomlene',
               avatar: '../assets/imgs/Cavatar.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'Duis ac aliquet dui.',
+              res:'Duis ac aliquet dui.',
               date:'15/11/2051'
             }],
   
@@ -355,7 +362,7 @@ export class BienvenidoPage {
               username: 'Atomlene',
               avatar: '../assets/imgs/Cavatar.png',
               valoracion: [1, 2, 3, 4],
-              reseña:'Proin commodo, quam vitae volutpat pellentesque, massa mauris aliquam nunc, ut posuere magna massa quis lacus.',
+              res:'Proin commodo, quam vitae volutpat pellentesque, massa mauris aliquam nunc, ut posuere magna massa quis lacus.',
               date:'15/11/2051'
             }],
   
@@ -380,7 +387,7 @@ export class BienvenidoPage {
               username: 'Atomlene',
               avatar: '../assets/imgs/Cavatar.png',
               valoracion: [],
-              reseña:'Está embrujada, la peor compra que he hecho',
+              res:'Está embrujada, la peor compra que he hecho',
               date:'17/05/2050'
             }],
   
@@ -405,7 +412,7 @@ export class BienvenidoPage {
               username: 'Star Trooper',
               avatar: '../assets/imgs/Avatar2.png',
               valoracion: [],
-              reseña:'Un poco apretada.',
+              res:'Un poco apretada.',
               date:'10/01/2054'
             }],
   
@@ -430,7 +437,7 @@ export class BienvenidoPage {
               username: 'MarLnet',
               avatar: '../assets/imgs/Avatar2.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'ras massa libero, eleifend in elementum sit amet, egestas quis purus.',
+              res:'ras massa libero, eleifend in elementum sit amet, egestas quis purus.',
               date:'10/11/2053'
             }],
   
@@ -455,7 +462,7 @@ export class BienvenidoPage {
               username: 'MarLnet',
               avatar: '../assets/imgs/Avatar2.png',
               valoracion: [1, 2, 3, 4],
-              reseña:'Ut in est rutrum, fermentum risus in, rhoncus est.',
+              res:'Ut in est rutrum, fermentum risus in, rhoncus est.',
               date:'10/11/2052'
             }],
   
@@ -480,7 +487,7 @@ export class BienvenidoPage {
               username: 'Space Trooper',
               avatar: '../assets/imgs/Cavatar.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'Ut euismod sit amet dolor non ultrices.',
+              res:'Ut euismod sit amet dolor non ultrices.',
               date:'21/04/2054'
             }],
   
@@ -505,7 +512,7 @@ export class BienvenidoPage {
               username: 'Space Trooper',
               avatar: '../assets/imgs/Cavatar.png',
               valoracion: [1, 2, 3, 4, 5],
-              reseña:'Nullam a suscipit urna, blandit tempor lectus.',
+              res:'Nullam a suscipit urna, blandit tempor lectus.',
               date:'22/03/2054'
             }],
   
@@ -530,7 +537,7 @@ export class BienvenidoPage {
               username: 'Space Trooper',
               avatar: '../assets/imgs/Cavatar.png',
               valoracion: [1, 2, 3],
-              reseña:' Phasellus mattis eu lorem ac dapibus.',
+              res:' Phasellus mattis eu lorem ac dapibus.',
               date:'25/05/2053'
             }],
   
@@ -552,12 +559,15 @@ export class BienvenidoPage {
     console.log('ionViewDidLoad BienvenidoPage');
   }
 
-  user() {
-    this.navCtrl.push('perfil');
+  verProducto(p) {
+    this.navCtrl.push(this.art, {producto: p, carrito:this.carrito})
   }
 
-  verProductos() {
-   // this.navCtrl.push{pagina, {producto:p, carrito:this.carrito}}
+  sesionPage() {
+    this.navCtrl.push(HomePage);
   }
 
+  cart() {
+    this.navCtrl.push(this.carr, {carrito: this.carrito});
+  }
 }

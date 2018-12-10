@@ -6,13 +6,32 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>cart</ion-title>
+  <ion-navbar color='primary'>
+    <ion-title>Carrito</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style='background-color: #ADD9F4'>
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let c of carrito">
+      <ion-item>
+      <ion-avatar item-start>
+        <img [src]=>
+      </ion-avatar>
+      <h2 (click)="clickLibro(b)">{{b.titulo}}</h2>
+      <p (click)="clickAutor(b)">{{b.autor}}</p>  
+      <p>{{b.editorial}}</p>      
+      <p>{{b.year}}</p>
+    </ion-item>
+    <ion-item-options side ="right">
+      <button ion-button (click)="clickEliminar(b)" color="danger">
+        <ion-icon name="close">Eliminar</ion-icon>
+      </button>
+    </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 
 </ion-content>

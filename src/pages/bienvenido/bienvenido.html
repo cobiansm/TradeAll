@@ -11,9 +11,9 @@
         <ion-icon name="cart"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>TradeAll</ion-title>
+    <ion-title>SpaceTrade</ion-title>
     <ion-buttons start>
-      <button ion-button (click)='user()' icon-only color="royal">
+      <button ion-button (click)='sesionPage()' icon-only color="royal">
         <ion-icon name="contact"></ion-icon>
       </button>
     </ion-buttons>
@@ -21,14 +21,14 @@
 </ion-header>
 
 
-<ion-content padding>
-  <ion-card *ngFor = 'let p of productos' (click)='verProducto()'>
+<ion-content padding style='background-color: #ADD9F4'>
+  <ion-card *ngFor = 'let p of productos' >
       <img [src] = p.imagen item-start>
     <ion-list>
-      <ion-item>
-        {{p.nombre}}
-      </ion-item>
-      <ion-item> {{p.vender.vendedor}}</ion-item>
+        <ion-item (click)='verProducto()'>{{p.nombre}}</ion-item>
+        <ion-item>{{p.precio}}</ion-item>
+          <ion-item> {{p.vender.vendedor}}</ion-item>
+        
       <ion-item>
       <ion-note item-start>
         {{p.date.fecha}}
@@ -40,3 +40,14 @@
   </ion-list>
   </ion-card>
 </ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar color='primary'>
+    <ion-row style='background-color: #476C9B'>
+    <ion-col>
+      <img src = "../assets/spaceship.png" style='height: 40px'/>
+    </ion-col>
+    <ion-col> <p style='text-align: end; font-size: 12px'>2018 ®SpaceTrade</p></ion-col>
+  </ion-row>
+ </ion-toolbar>
+</ion-footer>

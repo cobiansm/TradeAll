@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import {Storage} from "@ionic/storage";
 import { BienvenidoPage } from '../bienvenido/bienvenido';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the RegistroPage page.
@@ -22,7 +23,7 @@ nombre = '';
 tel = '';
 usuarios = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public storage: Storage, public alert: AlertController) {
   this.usuarios = this.navParams.get('usuarios');
   }
 
@@ -31,20 +32,39 @@ usuarios = [];
   }
 
   clickRegistro() {
-    console.log(this.correo);
-    console.log(this.contra);
-    this.usuarios.push({
-      correo: this.correo,
-      contra: this.contra,
-      nombre: this.nombre,
-      tel: this.tel
-    });
-    this.storage.set('usuarios', JSON.stringify(this.usuarios));
-    this.navCtrl.pop();
+    if (this.contra.length >= 8 && this.correo.length > 0) {
+      this.usuarios.push({
+        correo: this.correo,
+        contra: this.contra,
+        nombre: this.nombre,
+        tel: this.tel
+      });
+      this.storage.set('usuarios', JSON.stringify(this.usuarios));
+      this.navCtrl.pop();
+    } else if (this.contra.length < 8) {
+      const alerta = this.alert.create({
+        title: "Error 411",
+        subTitle: "Contraseña inválida",
+        buttons: ['Ok']
+      });
+      alerta.present();
+    } else if (this.correo.length <= 0 && this.correo.length <= 0) {
+      const alerta = this.alert.create({
+        title: "Error 204",
+        subTitle: "Llena todos los campos",
+        buttons: ['Ok']
+      });
+      alerta.present();
+    }
+   
   }
 
   home() {
-    this.navCtrl.push(BienvenidoPage)
-;  }
+    this.navCtrl.push(BienvenidoPage);  
+  }
+
+sesionPage() {
+  this.navCtrl.push(HomePage);
+}
 
 }
