@@ -27,6 +27,7 @@ export class BienvenidoPage {
       imagen:'../assets/imgs/MF.jpg',
       nombre:'Halcón Milenario',
       precio:'₿551,390,290',
+      vperfil: '../assets/imgs/Watto.jpg',
 
         vender: {
         vendedor:'Watto',
@@ -52,6 +53,7 @@ export class BienvenidoPage {
       imagen:'../assets/imgs/Arwing.jpg',
       nombre:'Arwing',
       precio:'₿17,580,000',
+      vperfil: '../assets/imgs/Falco.jpg',
 
         vender: {
         vendedor:'Falco',
@@ -77,6 +79,7 @@ export class BienvenidoPage {
       imagen:'../assets/imgs/Axiom.jpg',
       nombre:'Axiom',
       precio:'₿777,900,000',
+      vperfil: '../assets/imgs/BNL.png',
 
         vender: {
         vendedor:'BNL',
@@ -102,6 +105,7 @@ export class BienvenidoPage {
       imagen:'../assets/imgs/FS.jpg',
       nombre:'Platillo volador',
       precio:'₿6,200,030',
+      vperfil: '../assets/imgs/NASA.png',
 
         vender: {
         vendedor:'NASA',
@@ -127,6 +131,7 @@ export class BienvenidoPage {
       imagen:'../assets/imgs/Bubbleship.jpg',
       nombre:'Bubbleship',
       precio:'₿33,000,050',
+      vperfil: '../assets/imgs/BNL.png',
 
         vender: {
         vendedor:'BNL',
@@ -152,6 +157,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Corvette.jpg',
         nombre:'Corvette',
         precio:'₿345,600,799',
+        vperfil: '../assets/imgs/NASA.png',
   
           vender: {
           vendedor:'NASA',
@@ -177,6 +183,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/POD.jpg',
         nombre:'Pod de carreras',
         precio:'₿7,100,000',
+        vperfil: '../assets/imgs/Watto.jpg',
   
           vender: {
           vendedor:'Watto',
@@ -202,6 +209,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Ranger.jpg',
         nombre:'Ranger',
         precio:'₿52,900,000',
+        vperfil: '../assets/imgs/NASA.png',
   
           vender: {
           vendedor:'NASA',
@@ -227,6 +235,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Speeder.png',
         nombre:'Speeder',
         precio:'₿570,600',
+        vperfil: '../assets/imgs/Watto.jpg',
   
           vender: {
           vendedor:'Watto',
@@ -252,6 +261,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Tie.jpg',
         nombre:'Caza TIE',
         precio:'₿541,000,999',
+        vperfil: '../assets/imgs/Watto.jpg',
   
           vender: {
           vendedor:'Watto',
@@ -277,6 +287,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/XW.jpg',
         nombre:'X-Wing',
         precio:'₿232,500,000',
+        vperfil: '../assets/img/Watto.jpg',
   
           vender: {
           vendedor:'Watto',
@@ -302,6 +313,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/YW.jpg',
         nombre:'Y-Wing',
         precio:'₿182,900,000',
+        vperfil: '../assets/imgs/Watto.jpg',
   
           vender: {
           vendedor:'Watto',
@@ -327,6 +339,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Aurora.jpg',
         nombre:'Aurora',
         precio:'₿780,555,000',
+        vperfil: '../assets/imgs/Falco.jpg',
   
           vender: {
           vendedor:'Falco',
@@ -352,6 +365,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/CityDestroyerMothership.jpg',
         nombre:'City Destoyer Invasion Mothership',
         precio:'₿2,000,000,000',
+        vperfil: '../assets/imgs/BNL.png',
   
           vender: {
           vendedor:'BNL',
@@ -377,6 +391,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/EH.jpg',
         nombre:'Event Horizon',
         precio:'₿150,000,000',
+        vperfil: '../assets/imgs/BNL.png',
   
           vender: {
           vendedor:'BNL',
@@ -402,6 +417,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/EternalCrusader.jpg',
         nombre:'Eternal Crusader',
         precio:'₿567,900,000',
+        vperfil: '../assets/imgs/Falco.jpg',
   
           vender: {
           vendedor:'Falco',
@@ -427,6 +443,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/NaveR.jpg',
         nombre:'Nave Roja',
         precio:'₿233,400,000',
+        vperfil: '../assets/imgs/BNL.png',
   
           vender: {
           vendedor:'BNL',
@@ -452,6 +469,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Pelican.png',
         nombre:'Pelican',
         precio:'₿133,400,000',
+        vperfil: '../assets/imgs/Falco.jpg',
   
           vender: {
           vendedor:'Falco',
@@ -473,35 +491,11 @@ export class BienvenidoPage {
       },
 
       {
-        id: 17,
-        imagen:'../assets/imgs/SpaceCruiser.jpg',
-        nombre:'Space Cruiser',
-        precio:'₿76,900,022',
-  
-          vender: {
-          vendedor:'NASA',
-          valoracionv:[1, 2, 3, 4]
-          },
-  
-            review: [{
-              username: 'Space Trooper',
-              avatar: '../assets/imgs/Cavatar.png',
-              valoracion: [1, 2, 3, 4, 5],
-              res:'Ut euismod sit amet dolor non ultrices.',
-              date:'21/04/2054'
-            }],
-  
-            date: {
-                fecha:'12/12/2051',
-                disponibles:'Disponible: 13'
-            }
-      },
-
-      {
         id: 18,
         imagen:'../assets/imgs/Tardis.jpg',
         nombre:'Tardis',
         precio:'₿51,200,100',
+        vperfil: '../assets/imgs/NASA.png',
   
           vender: {
           vendedor:'NASA',
@@ -527,6 +521,7 @@ export class BienvenidoPage {
         imagen:'../assets/imgs/Valkyrie.png',
         nombre:'Valkyrie',
         precio:'₿251,200,100',
+        vperfil: '../assets/imgs/NASA.png',
   
           vender: {
           vendedor:'NASA',
@@ -545,7 +540,33 @@ export class BienvenidoPage {
                 fecha:'12/11/2050',
                 disponibles:'Disponible: 11'
             }
-      }
+      },
+
+      {
+        id: 20,
+        imagen:'../assets/imgs/SpaceCruiser.jpg',
+        nombre:'Space Cruiser',
+        precio:'₿76,900,022',
+        vperfil: '../assets/imgs/NASA.png',
+  
+          vender: {
+          vendedor:'NASA',
+          valoracionv:[1, 2, 3, 4]
+          },
+  
+            review: [{
+              username: 'Space Trooper',
+              avatar: '../assets/imgs/Cavatar.png',
+              valoracion: [1, 2, 3, 4, 5],
+              res:'Ut euismod sit amet dolor non ultrices.',
+              date:'21/04/2054'
+            }],
+  
+            date: {
+                fecha:'12/12/2051',
+                disponibles:'Disponible: 13'
+            }
+      },
       
   ];
 
@@ -560,7 +581,7 @@ export class BienvenidoPage {
   }
 
   verProducto(p) {
-    this.navCtrl.push(this.art, {producto: p, carrito:this.carrito})
+    this.navCtrl.push(this.art, {producto: p, carrito:this.carrito});
   }
 
   sesionPage() {

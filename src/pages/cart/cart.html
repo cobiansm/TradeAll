@@ -16,18 +16,16 @@
 <ion-content padding style='background-color: #ADD9F4'>
 
   <ion-list>
-    <ion-item-sliding *ngFor="let c of carrito">
+    <ion-item-sliding *ngFor="let c of carrito" >
       <ion-item>
       <ion-avatar item-start>
-        <img [src]=>
+        <img [src] = c.imagen>
       </ion-avatar>
-      <h2 (click)="clickLibro(b)">{{b.titulo}}</h2>
-      <p (click)="clickAutor(b)">{{b.autor}}</p>  
-      <p>{{b.editorial}}</p>      
-      <p>{{b.year}}</p>
+      <ion-row><h2>{{c.nombre}}</h2></ion-row>
+      <ion-row><ion-note item-start>{{c.precio}}</ion-note></ion-row>
     </ion-item>
     <ion-item-options side ="right">
-      <button ion-button (click)="clickEliminar(b)" color="danger">
+      <button ion-button (click)="clickEliminar(c)" color="danger">
         <ion-icon name="close">Eliminar</ion-icon>
       </button>
     </ion-item-options>

@@ -41,7 +41,7 @@ usuarios = [];
       });
       this.storage.set('usuarios', JSON.stringify(this.usuarios));
       this.navCtrl.pop();
-    } else if (this.contra.length < 8) {
+    } else if (this.correo.length > 0 && this.contra.length < 8) {
       const alerta = this.alert.create({
         title: "Error 411",
         subTitle: "Contraseña inválida",

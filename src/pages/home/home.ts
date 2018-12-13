@@ -64,4 +64,8 @@ usuarios = [];
     this.navCtrl.push(this.registrarse, {usuarios: this.usuarios});
   }
 
+  inicio() {
+    this.navCtrl.push(BienvenidoPage);  
+  }
+
 }

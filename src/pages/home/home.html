@@ -1,9 +1,12 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title style='background-color: #476C9B'>
-      Iniciar Sesión
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar color = 'primary'>
+    <ion-buttons end>
+      <button ion-button (click)='inicio()' icon-only color="royal">
+        <ion-icon name="home"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding style='background-color: #ADD9F4'>
@@ -26,14 +29,14 @@
     <button ion-button block (click)="registro()" color="light" >Registrarse</button>
    
     
-  <ion-list>
+  <!-- <ion-list>
     <ion-item *ngFor="let u of usuarios">
       <ion-card>
         {{u.correo}}
         {{u.contra}}
       </ion-card>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
 </ion-content>
 
