@@ -11,6 +11,7 @@ import { RegistroPage } from '../pages/registro/registro';
 import { IonicStorageModule } from '@ionic/storage';
 import { CartPage } from '../pages/cart/cart';
 import { ProfilePage } from '../pages/profile/profile';
+import { UserPage } from '../pages/user/user';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProfilePage } from '../pages/profile/profile';
     BienvenidoPage,
     RegistroPage,
     CartPage,
-    ProfilePage
+    ProfilePage,
+    UserPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { ProfilePage } from '../pages/profile/profile';
     BienvenidoPage,
     RegistroPage,
     CartPage,
-    ProfilePage
+    ProfilePage,
+    UserPage
   ],
   providers: [
     StatusBar,

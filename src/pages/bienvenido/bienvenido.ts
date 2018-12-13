@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { CartPage } from '../cart/cart';
 import { ProfilePage } from '../profile/profile';
+import { UserPage } from '../user/user';
 
 /**
  * Generated class for the BienvenidoPage page.
