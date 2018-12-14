@@ -18,9 +18,9 @@
   <ion-list>
     <ion-item-sliding *ngFor="let c of carrito" >
       <ion-item>
-      <ion-avatar item-start>
+      <ion-thumbnail item-start>
         <img [src] = c.imagen>
-      </ion-avatar>
+      </ion-thumbnail>
       <ion-row><h2>{{c.nombre}}</h2></ion-row>
       <ion-row><ion-note item-start>{{c.precio}}</ion-note></ion-row>
     </ion-item>
@@ -31,5 +31,7 @@
     </ion-item-options>
     </ion-item-sliding>
   </ion-list>
+
+  <button ion-button block><ion-icon name="basket"></ion-icon>Comprar</button>
 
 </ion-content>
